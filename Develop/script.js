@@ -18,10 +18,9 @@ for(i=0; i<9; i++){
         var newText = $("<textarea>").attr("class", "col-10 future").attr("id",i)
     }
     JSON.stringify
-    newText.text(localStorage.getItem(""))
+    newText.val(localStorage.getItem(time[i]))
     var newBtn = $("<button>").attr("class", "col-1 saveBtn").text("save")
     // console.log(document.querySelector(`#hour-${i}`))
-    // console.log($(`#${i}`))
     newBtn.on("click", saveToLocal);
 
     timeblock.append(newP)
@@ -31,12 +30,13 @@ for(i=0; i<9; i++){
     parentContainer.append(timeblock)
 }
 
+
 function saveToLocal(){
     console.log("saved to local!")
 
-    var EventName = document.querySelector('#time').id;
+    var EventName = $(this).prev().prev().text()
     
-    var UserEvent = document.querySelector('textarea').value;
+    var UserEvent = $(this).prev().val();
 
     console.log(UserEvent)
     window.localStorage.setItem(EventName, UserEvent)
