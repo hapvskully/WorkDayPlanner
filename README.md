@@ -6,4 +6,4 @@ This work day planner works without errors allowing the user to enter in an even
 
 * ## Screenshot 
 
-![alt text](https://github.com/[hapvskully]/[WorkDayPlanner]/blob/[main]/image.jpg?raw=true)
+! [workdayplanner](/WorkDayPlannerLocalStorage)
