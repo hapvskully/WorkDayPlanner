@@ -6,4 +6,4 @@ This work day planner works without errors allowing the user to enter in an even
 
 * ## Screenshot 
 
-! [workdayplanner](/WorkDayPlannerLocalStorage)
+![Workdayplanner](/assets/img/WorkDayPlanner/)
